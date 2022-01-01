@@ -1,0 +1,453 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>合工大超越（数二）总结 | Colopen's blog</title><meta name="author" content="Colopen 彩色铅笔"><meta name="copyright" content="Colopen 彩色铅笔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="卷一选择题 等价无穷小，泰勒展开，凑导数定义$$\lim_{x\to0}\frac{x^2}{f(x)} &#x3D;\lim_{x\to0}\frac{x}{\dfrac{f(x)-f(0)}{x-0}} &#x3D;\lim_{x\to0}\frac{x}{f’(0)} &#x3D; 1$$可知 $f’(0) &#x3D; 0$，又通过保号性易知，为极小值点本题还可以用等式脱帽法来做，展开后就可以直接洛必达了，否则不能使用洛必达 简">
+<meta property="og:type" content="article">
+<meta property="og:title" content="合工大超越（数二）总结">
+<meta property="og:url" content="http://www.colopen-blog.com/DailyMath/record/chaoyue/index.html">
+<meta property="og:site_name" content="Colopen&#39;s blog">
+<meta property="og:description" content="卷一选择题 等价无穷小，泰勒展开，凑导数定义$$\lim_{x\to0}\frac{x^2}{f(x)} &#x3D;\lim_{x\to0}\frac{x}{\dfrac{f(x)-f(0)}{x-0}} &#x3D;\lim_{x\to0}\frac{x}{f’(0)} &#x3D; 1$$可知 $f’(0) &#x3D; 0$，又通过保号性易知，为极小值点本题还可以用等式脱帽法来做，展开后就可以直接洛必达了，否则不能使用洛必达 简">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://www.colopen-blog.com/img/bg.jpg">
+<meta property="article:published_time" content="2021-12-08T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-13T08:53:55.574Z">
+<meta property="article:author" content="Colopen 彩色铅笔">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.colopen-blog.com/img/bg.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.colopen-blog.com/DailyMath/record/chaoyue/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: Colopen 彩色铅笔","link":"Link: ","source":"Source: Colopen's blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '合工大超越（数二）总结',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-13 16:53:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="./css/custom.css"><script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avator.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">131</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">52</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/bg.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Colopen's blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">合工大超越（数二）总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-12-08T16:00:00.000Z" title="Created 2021-12-09 00:00:00">2021-12-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-12-13T08:53:55.574Z" title="Updated 2021-12-13 16:53:55">2021-12-13</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="合工大超越（数二）总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="卷一"><a href="#卷一" class="headerlink" title="卷一"></a>卷一</h1><h2 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h2><ol>
+<li>等价无穷小，泰勒展开，凑导数定义<br>$$<br>\lim_{x\to0}\frac{x^2}{f(x)} =<br>\lim_{x\to0}\frac{x}{\dfrac{f(x)-f(0)}{x-0}} =<br>\lim_{x\to0}\frac{x}{f’(0)} = 1<br>$$<br>可知 $f’(0) = 0$，又通过保号性易知，为极小值点<br>本题还可以用等式脱帽法来做，展开后就可以直接洛必达了，否则不能使用洛必达</li>
+<li>简单题</li>
+<li>余丙森五套卷出过，几何上易得，数学证明上做差，然后拆分区间，再换元到相同区间即可<br>$$<br>\begin{aligned}<br>I - J &amp;= \int_0^{\frac{\pi}{2}}\dfrac{\cos x - \sin x}{1+x^2}dx =<br>\int_0^{\frac{\pi}{4}}\dfrac{\cos x - \sin x}{1+x^2}dx + \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\dfrac{\cos x - \sin x}{1+x^2}dx<br>\\<br>&amp;=<br>\int_0^{\frac{\pi}{4}}\dfrac{\cos x - \sin x}{1+x^2}dx +<br>\int_{\frac{\pi}{4}}^0 \dfrac{\sin x - \cos x}{1+(\dfrac{\pi}{2} - x)^2}dx<br>\\<br>&amp;=<br>\int_0^{\frac{\pi}{4}}\dfrac{\cos x - \sin x}{1+x^2}dx +<br>\int_0^{\frac{\pi}{4}} \dfrac{\cos x - \sin x}{1+(\dfrac{\pi}{2} - x)^2}dx<br>\\<br>&amp;=<br>\int_0^{\frac{\pi}{4}} (\cos x - \sin x) \cdot (\dfrac{1}{1+x^2}-\dfrac{1}{1+(\dfrac{\pi}{2} - x)^2})dx &gt; 0<br>\end{aligned}<br>$$</li>
+<li>李林四套卷出过，构造辅助函数求二阶导即可</li>
+<li>利用解的结构反向构造二阶常系数非齐次微分方程</li>
+<li>利用可微定义，洛必达求极限</li>
+<li>二重积分定义，建议看这个视频学习一下这类问题 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1c54y1D776">定积分定义求极限的题</a></li>
+<li>二次函数不能分解的问题</li>
+<li>感觉题目出错了，不然就是显然</li>
+<li>简单题</li>
+</ol>
+<h2 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h2><ol start="11">
+<li>高阶导数，泰勒展开</li>
+<li>先代还 $x = e^t$ 再两侧同时积分即可</li>
+<li>多元函数求一点处的导数，可以用先代再求的技巧</li>
+<li>比较瑕点的阶</li>
+<li>二重积分极值互化</li>
+<li>惯性定理，利用零惯性指数为1，行列式为零</li>
+</ol>
+<h2 id="解答题"><a href="#解答题" class="headerlink" title="解答题"></a>解答题</h2><ol start="17">
+<li>这题不能出现 $f’’(x)$ 故不能使用洛必达法则，可以在 $x = 0$ 处用泰勒展开</li>
+<li>多元函数无条件极值，条件极值部分直接用不等式放缩即可</li>
+<li>武老师每日一题出过，简单题</li>
+<li>变量可分离的齐次型，解出来后是一个圆，计算量中等</li>
+<li>二重积分，积分域对称性化简，然后极值互化做</li>
+<li>第一问用到了特征值之和等于迹<br>第二问注意给的矩阵 $A$ 不是对称阵，先手动分配一下系数再正常做即可</li>
+</ol>
+<h1 id="卷二"><a href="#卷二" class="headerlink" title="卷二"></a>卷二</h1><h2 id="选择题-1"><a href="#选择题-1" class="headerlink" title="选择题"></a>选择题</h2><ol>
+<li>等式脱毛法，泰勒展开都可</li>
+<li>常用结论，求 $x=0$ 的左右导数令相等易得</li>
+<li>利用解的结构构造齐次线性微分方程，也考了太多次了</li>
+<li>简单题，几何直观显然</li>
+<li>都是经典的范例，不多解释</li>
+<li>隐函数存在定理，余五中提过了，这里再写一次：<ol>
+<li>$F$ 在点 $(x_0,y_0)$ 某邻域 $D$ 内连续</li>
+<li>$F(x_0,y_0) = 0$（通常称为初始条件）</li>
+<li>$F$ 在某邻域 $D$ 内存在连续偏导数 $F_y(x,y)$</li>
+<li>$F_y(x_0,y_0) \ne 0$ （一般是验证最后一个条件）</li>
+</ol>
+</li>
+<li>先算二重积分，再解一个定积分，简单题</li>
+<li>常用结论</li>
+<li>说一下我的做法，由四个等式易得：</li>
+</ol>
+<p>$$<br>\begin{cases}<br>\alpha_1 - \alpha_2 - 2\alpha_3 + \alpha_4 = 0 \\<br>-\alpha_1 + \alpha_2 - 2\alpha_3 - \alpha_4 = 0 \\<br>-2\alpha_1 + \alpha_2 + \alpha_3 - 4\alpha_4 = 0 \\<br>-\alpha_1 - 4\alpha_2 - \alpha_3 + \alpha_4 = 0<br>\end{cases} \quad\Rightarrow\quad<br>\begin{pmatrix}<br>1 &amp; -1 &amp; -2 &amp; 1 \\<br>-1 &amp; 1 &amp; -2 &amp; -5 \\<br>-2 &amp; 1 &amp; 1 &amp; -4 \\<br>-1 &amp; -4 &amp; -1 &amp; 1<br>\end{pmatrix} \begin{pmatrix}<br>\alpha_1\\\alpha_2\\\alpha_3\\\alpha_4<br>\end{pmatrix} = 0<br>$$</p>
+<p>易得 $r(A) = 3$，可得 $r(\alpha_1,\alpha_2,\alpha_3,\alpha_4) \le 1$，又 $r(\alpha_1,\alpha_2,\alpha_3,\alpha_4) \ge 1$<br>故 $r(\alpha_1,\alpha_2,\alpha_3,\alpha_4) = 1$<br>10. 是一个方程组构造问题<br>$$<br>\begin{pmatrix}<br>1 &amp; x_1 &amp; x_1^2 &amp; x_1^3 \\<br>1 &amp; x_2 &amp; x_2^2 &amp; x_2^3<br>\end{pmatrix}<br>\begin{pmatrix}<br>\alpha, \beta<br>\end{pmatrix} = 0<br>$$<br>且 $r(A) = 2$，故 $r(\alpha, \beta) \le 2 = 4 - 2 = S - r(A)$</p>
+<h2 id="填空题-1"><a href="#填空题-1" class="headerlink" title="填空题"></a>填空题</h2><ol start="11">
+<li>一点处的高阶导数，考虑泰勒展开，需要先解一个微分方程<br>$$<br>\begin{aligned}<br>f(x) &amp;= \int_0^x e^{-f(t)} dt \Rightarrow f’(x)e^{f(x)} = 1 \Rightarrow e^y\dfrac{dy}{dx} = 1 \Rightarrow e^y = x + C<br>\end{aligned}<br>$$<br>代入初值后，易得：$f(x) = \ln (x + 1)$，然后泰勒展开：$f(x) = \sum\limits_{k=1}^n \dfrac{(-1)^{k-1}}{k} x^{k}$<br>找到第 $n$ 次幂项：$\dfrac{(-1)^{n-1}}{n}x^n$，求 $n$ 阶导有：$(-1)^{n-1}(n-1)!$<br>本体难题在于一开始想到用微分方程解出原函数</li>
+<li>反函数的二阶导数公式，先推不难</li>
+<li>多元函数线性变换后链式求导，属于常规题</li>
+<li>二重积分极值互化，变上限积分洛必达求极限</li>
+<li>曲率半径公式</li>
+<li>常用的伴随矩阵秩的公式：$r(A^*) = \begin{cases}<br>n &amp; r(A) = n \\<br>1 &amp; r(A) = n - 1 \\<br>0 &amp; r(A) \le n - 1<br>\end{cases}$</li>
+</ol>
+<h2 id="解答题-1"><a href="#解答题-1" class="headerlink" title="解答题"></a>解答题</h2><ol start="17">
+<li>换元什么手段都用不了，直接想到了二重积分换序，没想到标答也是一样的思路<br>然后凑变上限积分微分即可，不难</li>
+<li>无条件极值，用黑塞矩阵判别式即可</li>
+<li>第一问求三次导可得，第二问的放缩用的是第一问辅助函数中一阶导进行放缩的</li>
+<li>二重积分，对称性化简，分段函数讨论积分域进行拆分，然后极直互化硬算，计算量中等偏上</li>
+<li>硬算，第二问可以用质点法</li>
+<li>常规题</li>
+</ol>
+<h1 id="卷三"><a href="#卷三" class="headerlink" title="卷三"></a>卷三</h1><h2 id="选择题-2"><a href="#选择题-2" class="headerlink" title="选择题"></a>选择题</h2><ol>
+<li>易知 $x = 0, x = \dfrac{1}{\ln -b}$ 为两个间断点，分类讨论即可<ol>
+<li>$a = 0$ 时，$x = 0$ 为可去，$x = \dfrac{1}{\ln -b}$ 时<ol>
+<li>当 $b = -e$ 时，为可去间断点</li>
+<li>当 $b \ne -e$ 时，为无穷间断点</li>
+</ol>
+</li>
+<li>$a \ne 0$ 时，$x = 0$ 为跳跃，$x = \dfrac{1}{\ln -b}$ 时<ol>
+<li>当 $b \ne -e$ 时，为无穷间断点</li>
+<li>当 $b = -e$ 时，为可取间断点</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>不要去解微分方程，两侧求导代值即可</li>
+<li>构造辅助函数，求导易得</li>
+<li>巧妙利用反函数反向构造的题<br>$$<br>\int f^{-1}(x)dx = xf^{-1}(x) - \int xdf^{-1}(x) = xu - \int f(u)du = xu-F(u)-C<br>$$</li>
+<li>同解问题，一般线代考的居多，考到了微分方程还是第一次，但是还是很简答<br>求一个带一个，易得</li>
+<li>隐函数求导，消参易得</li>
+<li>解两个二重积分，纯计算，一个极直互化，一个直接算</li>
+<li>由 $r(A) = 2$ 易得：$r(A^{<em>}) = 1$，又 $A^{</em>}A = |A|E = 0$<br>故 $A$ 的列向量都是 $A^{*}$ 的解向量，然后选出线性无关的两个即可</li>
+<li>反推：$AP = C$，则 $\begin{pmatrix}A&amp;C\\0&amp;B\end{pmatrix} \begin{pmatrix}E_n&amp;-P\\0&amp;E_n\end{pmatrix}=\begin{pmatrix}A&amp;0\\0&amp;B\end{pmatrix} \Rightarrow r(A) + r(B)$<br>正推不成立，反例读者自构不难</li>
+<li>简单题</li>
+</ol>
+<h2 id="填空题-2"><a href="#填空题-2" class="headerlink" title="填空题"></a>填空题</h2><ol start="11">
+<li>参数方程求二阶导数，直接套公式即可</li>
+<li>先用一下”区间再现”消掉分子，分母再用一下辅助角公式就出来了</li>
+<li>分别对方程关于 $x$ 和 $y$ 求偏导，然后联立方程解 $f_1(1,1)$ 即可</li>
+<li>对隐函数求导，解出 $y’$ 和 $y’’$，然后对 $y$ 泰勒展开，代入即可</li>
+<li>二重积分换序，简单题</li>
+<li>简单的恒等变形，简单题</li>
+</ol>
+<h2 id="解答题-2"><a href="#解答题-2" class="headerlink" title="解答题"></a>解答题</h2><ol start="17">
+<li>先解一个二阶常系数非齐次微分方程，然后代入初值消参，在计算一个极限，简单题</li>
+<li>答案有点复杂，说说我的做法：<br>欲求 $z$ 的最大最小值，等价于求 $z^2$ 的最大值，等价于求 $1 - x^2 - y^2$ 的最小值<br>等价于求 $x^2 + y^2$ 的最大值<br>就有目标函数：$x^2 + y^2$ 和约束条件：$3x^2 + 3y^2 + 2xy - 3 = 0$<br>两者属于齐次式，构造拉格朗日乘子然后 $xL_x - yL_y$ 即可<br>详情见我个人编写的 <strong>【专题】多元函数极值专题</strong></li>
+<li>由 $\displaystyle\int_0^1 xf’(x)dx = 1$ 易得：$\displaystyle\int_0^1 f(x)dx = -1$<br>被题目限制掉了很多做法，一开始有想直接万能构造罗尔，但是没给到足够的两个端点信息<br>然后又去试了多项式拟合法，也是构造不了的，本题正确做法应是再往回还原一阶，然后用泰勒展开<br>说一下为什么会这么想，因为题目只给了一侧端点 $f(1)=0$，和一个未知点 $f(x_0) = -1$<br>在这一阶上，无法凑出罗尔的条件，因此考虑还原成 $\displaystyle\int_0^xf(t)dt$ 就有了两个点的信息<br>分别是：$\displaystyle\int_0^0f(t)dt = 0$ 和 $\displaystyle\int_0^1f(t)dt = -1$，考虑直接泰勒展开<br>展开点选取 $x = 1$，原因很简单，有具体 $f(1) = 0$ 的信息<br>有 $\displaystyle\int_0^x f(t)dt = -1 + \dfrac{f’(\xi)}{2} (x-1)^2$<br>然后令 $x = 0$ 有：$f’(\xi) = 2$</li>
+<li>将方程问题和极限连在一起考，很新颖<br>做法和普通方程问题一下，首先分离参数和变量，构造辅助函数求导找单调性<br>最后是求一个 $x \to +\infty$ 的极限</li>
+<li>有手就行</li>
+<li>答案求行列式去了，猛男，我说一下我的更简单的做法<br>直接配方法即可：$f = \dfrac{1}{2}x_1^2 + \dfrac{1}{2}(x_1-x_2)^2+ \dfrac{1}{2}(x_2-x_3)^2 + \cdots + + \dfrac{1}{2}(x_{n-1}-x_n)^2 + \dfrac{1}{2}x_n^2$<br>易得：$f \ge 0$，欲使 $f = 0$，当且仅当 $x_1=x_2=\cdots = x_n = 0$ 故正定<br>第二问就是 <strong>分块矩阵的初等变换</strong>，没有什么好讲的<br>第三问我的做法也和答案一样，大家直接参考答案就好了</li>
+</ol>
+<h1 id="卷四"><a href="#卷四" class="headerlink" title="卷四"></a>卷四</h1><h2 id="选择题-3"><a href="#选择题-3" class="headerlink" title="选择题"></a>选择题</h2><ol>
+<li>变上限积分等价无穷小，有手就行</li>
+<li>真题出过一次，在 $x=0$ 处连续是通过左右侧夹逼计算的极限</li>
+<li>比较在瑕点的阶，简单题</li>
+<li>二阶导数存在，一阶连续，然后保号，简单题</li>
+<li>先分离参数，然后求导绘制大致图像，找出最值</li>
+<li>求偏导，套黑塞矩阵判别式，化简消元，不难</li>
+<li>二重积分，对称性化简，判断被积函数在积分域上正负</li>
+<li>分快矩阵求伴随，常规题</li>
+<li>注意第一个命题有 $c=0$ 的特例</li>
+<li>白给题</li>
+</ol>
+<h2 id="填空题-3"><a href="#填空题-3" class="headerlink" title="填空题"></a>填空题</h2><ol start="11">
+<li>一阶非线性微分方程</li>
+<li>区间再现化简，然后求 $\int sec^3x dx$ 凑微分分布积分</li>
+<li>隐函数求偏导</li>
+<li>这个考到一个常用公式，分子分母同除 $x$ 构造即可<br>对于周期为 $T$ 的函数 $f(x)$ 有<br>$$<br>\lim\limits_{x\to+\infty} \dfrac{\displaystyle\int_0^x f(t)dt}{x} = \dfrac{1}{T}\int_0^T f(t)dt<br>$$<blockquote>
+<p>简单证明：</p>
+<p>令 $a_n = \displaystyle\int_0^{nT} f(t)dt$，$b_n = nT$</p>
+<p>显然 $\lim\limits_{n\to\infty} b_n = +\infty$，且 $b_n$ 单调递增</p>
+<p>故 $\lim\limits_{n\to\infty} \dfrac{a_n}{b_n} = \lim\limits_{n\to\infty}\dfrac{a_{n+1} - a_n}{b_{n+1}-b_n} = \dfrac{\displaystyle\int_{nT}^{nT+T}f(t)dt}{T} = \dfrac{\displaystyle\int_{0}^{T}f(t)dt}{T}$</p>
+<p>最后由海涅定理可得：<br>$$<br>\lim\limits_{x\to+\infty} \dfrac{\displaystyle\int_0^x f(t)dt}{x} = \dfrac{1}{T}\int_0^T f(t)dt<br>$$</p>
+</blockquote>
+</li>
+<li>二重积分换序</li>
+<li>分块矩阵求行列式，求逆，求伴随</li>
+</ol>
+<h2 id="解答题-3"><a href="#解答题-3" class="headerlink" title="解答题"></a>解答题</h2><ol start="17">
+<li>拉格朗日求极限</li>
+<li>第一问是经典高斯曲线，怎么做都行<br>第二问直接分布积分，就出来了</li>
+<li>无条件极值，用黑塞矩阵判别式<br>我可以给一个不同的思路，是条件极值的一个技巧 —— 极值互化<br>换成三角函数后，确定好 $(r,\theta)$ 的区间范围，找极值</li>
+<li>拉格朗日的几何意义，是一道我在 <strong>【专题】中值定理证明题</strong> 中举的例题，我比答案写的好多了<br>直接搬运原题过来，读者稍微改改就好了</li>
+</ol>
+<blockquote>
+<p>【<strong>2013年</strong>】证明：若函数 $\varphi(x)$ 具有二阶导数，且满足 $\varphi(2) &gt; \varphi(1)$，$\varphi(2) &gt; \displaystyle\int_2^3\varphi(x) dx$，则至少存在一点 $\xi \in (1,3)$，s.t. $\varphi’’(\xi) &lt; 0$</p>
+<p>【<strong>分析</strong>】首先，根据题干找出所有端点信息，考虑对积分 $\displaystyle\int_2^3\varphi(x)dx$ 用积分中值定理有：</p>
+<p>$\varphi(x_0) = \displaystyle\int_2^3\varphi(x) dx$，其中 $2 &lt; x_0 &lt; 3$，成功找出所有的端点信息：$\varphi(1),\varphi(2),\varphi(x_0)$</p>
+<p>根据题干的不等关系，初步绘制图像，如下：</p>
+<p><img src="https://cdn.acwing.com/media/article/image/2021/11/20/55909_e0e0db614a-IMG_DAD7F610034F-1.jpeg"></p>
+<p>在三个端点相邻的区间使用 Lagrange 中值定理，估计出一点的斜率，然后用割线斜率代替，如下：</p>
+<p><img src="https://cdn.acwing.com/media/article/image/2021/11/21/55909_ed80a8dc4a-IMG_D671F44AB2F7-1.jpeg"></p>
+<p>得到一个一阶导数大于 0 的 $\xi_1$ 和一阶导数小于 0 的 $\xi_2$，然后我们绘制 $\varphi’(x)$ 与 $x$ 的图像：</p>
+<p><img src="https://cdn.acwing.com/media/article/image/2021/11/21/55909_fc123c3a4a-IMG_A0A61C59EA67-1.jpeg"></p>
+<p>$\xi_1$ 大于 0，位于 $x$ 轴上方；$\xi_2$ 小于 0，位于 $x$ 轴下方</p>
+<p>然后我们继续利用 Lagrange 中值定理，估计出了第三个中值 $\xi_3$ 等于 该段区间的割线斜率 $&lt;0$</p>
+<p>即答案所要求的点 $\varphi’’(\xi) &lt; 0$</p>
+<p>该几何法，成功帮助我们梳理了一遍证明思路，直接根据上述步骤，转化为数学语言写出即可</p>
+<p>【<strong>解</strong>】由 <strong>积分中值定理</strong> 可得：$\exists x_0 \in (2,3)$，s.t. $\varphi(x_0) = \displaystyle\int_2^3 \varphi(x) dx$</p>
+<p>由 Lagrange 中值定理：$\exists \xi_1\in(1, 2)$，s.t. $\varphi’(\xi_1) = \varphi(2) - \varphi(1) &gt; 0$</p>
+<p>由 Lagrange 中值定理：$\exists \xi_2\in(2,x_0)$，s.t. $\varphi’(\xi_2) = \varphi(x_0) - \varphi(2) &lt; 0$</p>
+<p>由 Lagrange 中值定理：$\exists \xi\in(\xi_1, \xi_2)$，s.t. $\varphi’’(\xi) = \varphi’(\xi_2) - \varphi’(\xi_1) &lt; 0$ QED</p>
+</blockquote>
+<ol start="21">
+<li> 二重积分极值互化，计算量很小</li>
+<li> 白给题</li>
+</ol>
+<h1 id="卷五"><a href="#卷五" class="headerlink" title="卷五"></a>卷五</h1><h2 id="选择题-4"><a href="#选择题-4" class="headerlink" title="选择题"></a>选择题</h2><ol>
+<li>常规题：$($ 奇函数 $)’$ = 偶函数，$($ 偶函数 $)’$ = 奇函数<br>$\displaystyle\int_a^x$ 奇函数 $dx$ = 偶函数，$\displaystyle\int_0^x$ 偶函数 $dx$ = 奇函数</li>
+<li>简单题，值得注意的是正负无穷共享同一条斜渐近线，因此不能算作两条</li>
+<li>这题解析给的有问题，我说一下做法，条件已知：$f(x) - \displaystyle\int_0^x f(t)dt \le 0$<br>考虑中值定理还原原函数，构造 $F(x) = \displaystyle\int_0^x f(t)dt$，有 $F’(x)-F(x) \le 0$<br>利用积分因子法还原：$(F(x)e^{-x})’ \le 0$ 故可知函数 $G(x) = F(x)e^{-x}$ 单调递减<br>又 $G(0) = F(0) = 0$，故 $G(x) \le 0$，即 $\displaystyle\int_0^x f(t)dt \le 0$<br>要么题错了，要么答案错了</li>
+<li>显然两个积分都找不到原函数，标准做法，按住一个不动，另一个换元分布积分，从而消元</li>
+<li>连续定义，导数定义，计算题</li>
+<li>等式脱帽法易得：$f(x,y) = x^2 + y^2 + xy^2 + o(x^2 + y^2)$，于是有<br>$$<br>\lim_{(x,y)\to(0,0)}\dfrac{f(x,y)}{x^2+y^2}=\lim_{(x,y)\to(0,0)}\dfrac{x^2 + y^2 + xy^2 + o(x^2 + y^2)}{x^2+y^2}<br>$$<br>又 $0 \le |\dfrac{xy^2}{x^2+y^2}| \le |\dfrac{y}{2}|$，易得：$\lim\limits_{(x,y)\to(0,0)}\dfrac{f(x,y)}{x^2+y^2} = 1$<br>故 $\lim\limits_{(x,y)\to(0,0)}\dfrac{f(x,y)}{\sqrt{x^2+y^2}} = 0$从而可以得到：$f(x,y)$ 可微<br>且 $A = B = f(0,0) = 0$</li>
+<li>二重积分极值互化</li>
+<li>简单题，真题出过了，$B = E_{32}(2)E_{12}A$<br>则 $|B| = -|A|$，$B^{-1} = A^{-1}E_{12}E_{32}(-2)$<br>故 $-B^{<em>}=A^{</em>}E_{12}E_{32}(-2)$</li>
+<li>$A^2=0$ 故只有特征值 $0$，若要 $A$ 可相似对角化，则 $r(A) = 0$，即 $A = 0$<br>又 $A\ne 0$ 故不可相似对角化<br>实对称阵的特征值必为实数，故解得：$\lambda = 1$，又 $A$ 可相似对角化，故 $r(A - E) = 0$，解得：$A = E$<br>后两个显然</li>
+<li>简单题，不多解释</li>
+</ol>
+<h2 id="填空题-4"><a href="#填空题-4" class="headerlink" title="填空题"></a>填空题</h2><ol start="11">
+<li>定积分定义，两种划分做法都可<br>区间 $[0,1]$ 划分成 $n$ 块，选择每一块的中点划分：$\dfrac{2k-1}{2n}$<br>$$<br>\lim_{n\to\infty}\dfrac{1}{n}\sum_{k=1}^n \dfrac{1}{\sqrt{1 + (\dfrac{2k-1}{2n})^2}} =\displaystyle\int_0^1\dfrac{1}{\sqrt{1+x^2}}dx = \ln(1 + \sqrt{2})<br>$$<br>区间 $[0,2]$ 划分成 $n$ 块，选择每一块的中点划分：$\dfrac{2k-1}{n}$<br>$$<br>\lim_{n\to\infty}\dfrac{1\times2}{n}\sum_{k=1}^n \dfrac{1}{\sqrt{4 + (\dfrac{2k-1}{n})^2}} =\displaystyle\int_0^2\dfrac{1}{\sqrt{4+x^2}}dx = \ln(1 + \sqrt{2})<br>$$</li>
+<li>二阶常系数非齐次微分方程，分段解，然后利用连续性消参，代入条件，最后解出答案</li>
+<li>给定初值，一般就是要积分，把 $y$ 视作常数，先看微分方程：$f’(x) + f(x) = 0$<br>解得：$f(x,y)\cdot e^{x} = \varphi(y)$ 代入初值：$f(0,\dfrac{\pi}{2}) = 1 = \varphi(\dfrac{\pi}{2})$<br>再求y的偏导：$f’(y)=\varphi’(y)e^{-x} = \cot y \cdot \varphi(y)e^{-x}$<br>化简微分方程得：$\varphi’(y) - \cot y \varphi(y) = 0$，解得：$\varphi(y) = C\sin y$<br>代入初值：$\varphi(\dfrac{\pi}{2}) = C = 1$，故 $\varphi(y) = \sin y$<br>因此：$f(x,y) = e^{-x}\sin y$，$f_{xx} = f(x,y), f_{yy} = -f(x,y)$<br>故：$f_{xx} + f_{yy} = 0$</li>
+<li>$dS = \sqrt{(dx)^2 + (dy)^2} = \sqrt{(\dfrac{dx}{dt})^2 + \dfrac{dy}{dt})^2} dt$</li>
+<li>二重积分换序，然后变上限积分求导</li>
+<li>又平方和易知 $f$ 为半正定矩阵，因此各个平方项为0存在非零解</li>
+</ol>
+<h2 id="解答题-4"><a href="#解答题-4" class="headerlink" title="解答题"></a>解答题</h2><ol start="17">
+<li>分离参数，构造辅助函数，求导绘制函数图像，简单题</li>
+<li>真题考过一次类似的，不过比这个简单<br>本题难点是对 $y’ = \tan \alpha$ 变型：<br>$$<br>\begin{aligned}<br>y’ &amp;= \sqrt{\sec^2\alpha - 1}   \\<br>y’^2 + 1 &amp;= \sec^2\alpha   \\<br>y’^2 + 1 &amp;= \dfrac{1}{\cos^2 \alpha}   \\<br>\sqrt{y’^2 + 1} &amp;= \dfrac{1}{\cos \alpha}<br>\end{aligned}<br>$$<br>然后回代到微分方程中计算：$2y^2y’’ = (1 + y’^2)^2$ 即可</li>
+<li>单纯的算，没什么好说的</li>
+<li>二重积分，根据取整函数分段，然后本题答案是错的，正确答案应为：$\dfrac{\pi}{2}-\dfrac{1}{3}$</li>
+<li>数列极限，下界 $1$ 用第一数学归纳法易证<br>单调性用 $x_{n+1}-x_n = \sqrt{x_n}\ln x_n + 1 - x_n$<br>构造辅助函数 $F(x) = x\ln x + 1 - x$ 求两次导即可出答案</li>
+<li>考 $A^TA$ 的问题，一般不用去求出 $A^TA$ 的具体型，不然就是题目出的稀烂<br>利用 $Ax = 0$ 与 $A^TAx = 0$ 同解，做第一问<br>利用 $x^TA^TAx = (Ax)^T(Ax) = ||Ax||^2 \ge 0$ 做第二问<br>第三问常规题</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Colopen 彩色铅笔</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://www.colopen-blog.com/DailyMath/record/chaoyue/">http://www.colopen-blog.com/DailyMath/record/chaoyue/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/bg.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/others/xiao4/"><img class="next-cover" src="/img/cover/11_8.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">肖四整理</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%B7%E4%B8%80"><span class="toc-number">1.</span> <span class="toc-text">卷一</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text">解答题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%B7%E4%BA%8C"><span class="toc-number">2.</span> <span class="toc-text">卷二</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-1"><span class="toc-number">2.1.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-1"><span class="toc-number">2.2.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E9%A2%98-1"><span class="toc-number">2.3.</span> <span class="toc-text">解答题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%B7%E4%B8%89"><span class="toc-number">3.</span> <span class="toc-text">卷三</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-2"><span class="toc-number">3.1.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-2"><span class="toc-number">3.2.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E9%A2%98-2"><span class="toc-number">3.3.</span> <span class="toc-text">解答题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%B7%E5%9B%9B"><span class="toc-number">4.</span> <span class="toc-text">卷四</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-3"><span class="toc-number">4.1.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-3"><span class="toc-number">4.2.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E9%A2%98-3"><span class="toc-number">4.3.</span> <span class="toc-text">解答题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%B7%E4%BA%94"><span class="toc-number">5.</span> <span class="toc-text">卷五</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-4"><span class="toc-number">5.1.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-4"><span class="toc-number">5.2.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E7%AD%94%E9%A2%98-4"><span class="toc-number">5.3.</span> <span class="toc-text">解答题</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('/img/bg.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Colopen 彩色铅笔</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hello, welcome to my blog.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'gKOSQieW3w4mqQWaEbqkq3V6-9Nh9j0Va',
+      appKey: 'A3pLjLFHX6WdjQy1whxou4Ki',
+      placeholder: 'Please leave your footprints',
+      avatar: 'mp',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script>(function(d, w, c) {
+    w.ChatraID = 'br28SJa9R5bPMHm5T';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (true) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (false) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
